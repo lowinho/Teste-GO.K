@@ -8,6 +8,7 @@ import { apiRest } from '../../services/apiRest';
 
 // style
 import { styles } from './styles';
+import { theme } from '../../global/styles/theme';
 
 // types
 type Props =  {
@@ -64,14 +65,14 @@ export function List({ data, props }: Props) {
 
           <AntDesign name="right" 
           size={16} 
-          color="black" 
+          color={theme.colors.primary} 
           onPress={handleAddTags}
           />
 
           <View style={styles.star}>
             <AntDesign name="star" 
             size={16} 
-            color="#FFC700"
+            color={theme.colors.secondaryYellow2}
             onPress={handleAddTags}
             />
           </View>
@@ -101,22 +102,22 @@ export function List({ data, props }: Props) {
 
         <View style={styles.cardBottom}>
           <View style={styles.info}>
-          <SimpleLineIcons name="globe" size={24} color="#E5E5E5" style={styles.icon} />
+          <SimpleLineIcons name="globe" size={24} color={theme.colors.secondaryGray} style={styles.icon} />
             <Text style={styles.textCardBottom}>{ data.language }</Text>
           </View>
 
           <View style={styles.info}>
-            <AntDesign name="star" size={24} color="#E5E5E5" style={styles.icon}/>
+            <AntDesign name="star" size={24} color={theme.colors.secondaryGray} style={styles.icon}/>
             <Text style={styles.textCardBottom}>{ data.qtde_stars }</Text>
           </View>
           
           <View style={styles.info}>
-          <FontAwesome5 name="user-friends" size={24} color="#E5E5E5" style={styles.icon}/>
+          <FontAwesome5 name="user-friends" size={24} color={theme.colors.secondaryGray} style={styles.icon}/>
             <Text style={styles.textCardBottom}>{ data.repositories }</Text>
           </View>
 
           <View style={styles.info}>
-          <MaterialCommunityIcons name="clock-time-five-outline" size={24} color="#E5E5E5" style={styles.icon}/>
+          <MaterialCommunityIcons name="clock-time-five-outline" size={24} color={theme.colors.secondaryGray} style={styles.icon}/>
             <Text style={styles.textCardBottom}>{ data.day }</Text>
         </View>
       </View>

@@ -25,6 +25,7 @@ export const styles = StyleSheet.create({
   image: {
     width: 197.85,
     height: 80,
+    color: theme.colors.primary
   },
 
   largeText: {

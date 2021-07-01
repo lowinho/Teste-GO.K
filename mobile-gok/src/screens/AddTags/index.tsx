@@ -14,6 +14,7 @@ import { Background } from '../../components/Background';
 
 // style
 import { styles } from './styles';
+import { theme } from '../../global/styles/theme';
 
 
 export function AddTags(props: any) {
@@ -132,12 +133,12 @@ export function AddTags(props: any) {
           <View style={styles.input}>
             <View style={styles.glass}>
               <View style={styles.magnifyingGlass}>
-                <Entypo name="magnifying-glass" size={24} color="#7E7E7E" /> 
+                <Entypo name="magnifying-glass" size={24} color={theme.colors.secondaryGray2} /> 
               </View>
             
             <TextInput
               placeholder="Digite..."
-              placeholderTextColor='#7E7E7E'
+              placeholderTextColor={theme.colors.secondaryGray2}
               style={styles.containerInput}
               value={dataInput}
               onChangeText={setInputData}
@@ -151,7 +152,7 @@ export function AddTags(props: any) {
                 <Text style={styles.titleTags}>{ data.tag }</Text>
                 <View style={styles.plus}>
                   <RectButton onPress={() => deleteTags(data)}>
-                    <AntDesign name="closecircle" size={16} color="black" />
+                    <AntDesign name="closecircle" size={16} color={theme.colors.primary} />
                   </RectButton>
                 </View>
               </View>
@@ -165,7 +166,7 @@ export function AddTags(props: any) {
               <View style={styles.tags} key={data.id}>
                 <Text style={styles.titleTags}>{ data.tag }</Text>
                 <View style={styles.plus}>
-                  <AntDesign name="plus" size={16} color="black" onPress={() => addTags(data)}/>
+                  <AntDesign name="plus" size={16} color={theme.colors.primary} onPress={() => addTags(data)}/>
                 </View>
               </View>
               ))}

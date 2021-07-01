@@ -15,6 +15,7 @@ import GithubImg from '../../../assets/github.png';
 
 // style
 import { styles } from './styles';
+import { theme } from '../../global/styles/theme';
 
 export function Users(props: any) {
   const [data, setData] = useState([]);

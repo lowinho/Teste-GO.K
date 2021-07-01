@@ -13,6 +13,7 @@ import { Background } from '../../components/Background';
 
 // style
 import { styles } from './styles';
+import { theme } from '../../global/styles/theme';
 
 export function Repositories(props: any) {
   const {idUser} = props.route.params;
@@ -88,7 +89,7 @@ export function Repositories(props: any) {
         <View style={styles.boxTop}>
           <AntDesign name="arrowleft" 
           size={32} 
-          color="black" 
+          color={theme.colors.primary}
           onPress={handleUsers} 
           style={styles.arrow}/>
         
@@ -104,12 +105,12 @@ export function Repositories(props: any) {
             <View style={styles.magnifyingGlass}>
               <Entypo name="magnifying-glass" 
               size={24} 
-              color="#7E7E7E" /> 
+              color={theme.colors.secondaryGray2} /> 
             </View>
           
           <TextInput
             placeholder="Buscar um repositório..."
-            placeholderTextColor='#7E7E7E'
+            placeholderTextColor={theme.colors.secondaryGray2}
             style={styles.containerInput}
             value={search}
             onChangeText={text => { searchFilter(text) }}
@@ -118,7 +119,7 @@ export function Repositories(props: any) {
           <View style={styles.filter}>
             <MaterialIcons name="filter-list" 
             size={24} 
-            color="#7E7E7E" 
+            color={theme.colors.secondaryGray2} 
             onPress={handleListTags}/>
           </View>
         </View>

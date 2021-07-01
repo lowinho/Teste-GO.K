@@ -9,6 +9,7 @@ import { apiRest } from '../../services/apiRest';
 
 // style
 import { styles } from './styles';
+import { theme } from '../../global/styles/theme';
 
 type Props =  {
   data: any
@@ -56,30 +57,30 @@ export function UserRepository({data}: Props) {
           </View>
 
           {/* <View></View> */}
-          <AntDesign name="right" size={24} color="black" onPress={handleRepositories}/>
+          <AntDesign name="right" size={24} color={theme.colors.primary} onPress={handleRepositories}/>
 
           <View style={styles.trash}>
-            <FontAwesome5 name="trash" size={16} color="black" onPress={onDeleteUser}/>
+            <FontAwesome5 name="trash" size={16} color={theme.colors.primary} onPress={onDeleteUser}/>
           </View>
         </View>
 
         <View style={styles.cardBottom}>
           <View style={styles.info}>
-            <MaterialCommunityIcons name="office-building" size={24} color="#E5E5E5" style={styles.icon}/>
+            <MaterialCommunityIcons name="office-building" size={24} color={theme.colors.secondaryGray} style={styles.icon}/>
             { data.company 
               ? <Text style={styles.textCardBottom}>{data.company}</Text> 
               : <Text style={styles.textCardBottom}>Não informado</Text>}
           </View>
 
           <View style={styles.info}>
-            <FontAwesome name="map-marker" size={24} color="#E5E5E5" style={styles.icon}/>
+            <FontAwesome name="map-marker" size={24} color={theme.colors.secondaryGray} style={styles.icon}/>
             { data.location 
               ? <Text style={styles.textCardBottom}>{data.location}</Text> 
               : <Text style={styles.textCardBottom}>Não informado</Text>}
           </View>
 
           <View style={styles.info}>
-            <AntDesign name="star" size={24} color="#E5E5E5" style={styles.icon}/>
+            <AntDesign name="star" size={24} color={theme.colors.secondaryGray} style={styles.icon}/>
             { data.star 
               ? <Text style={styles.textCardBottom}>{data.star}</Text> 
               : <Text style={styles.textCardBottom}>0</Text>}

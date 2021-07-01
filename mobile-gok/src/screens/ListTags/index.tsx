@@ -13,6 +13,7 @@ import { Background } from '../../components/Background';
 
 // style
 import { styles } from './styles';
+import { theme } from '../../global/styles/theme';
 
 export function ListTags(props: any) {
   const {userId} = props.route.params;
@@ -110,7 +111,7 @@ export function ListTags(props: any) {
         <View style={styles.boxTop}>
           <AntDesign name="arrowleft" 
           size={32} 
-          color="black" 
+          color={theme.colors.primary} 
           onPress={handleRepositories} 
           style={styles.arrow}
           />
@@ -126,18 +127,18 @@ export function ListTags(props: any) {
         <View style={styles.magnifyingGlass}>
             <Entypo name="magnifying-glass" 
             size={24} 
-            color="#7E7E7E" /> 
+            color={theme.colors.secondaryGray2} /> 
           </View>
           <View style={styles.glass}>
             <View style={styles.filter}>
             <MaterialIcons name="filter-list" 
             size={24} 
-            color="#7E7E7E" />
+            color={theme.colors.secondaryGray2} />
             </View>
           
             <TextInput
             placeholder="Buscar por tag..."
-            placeholderTextColor='#7E7E7E'
+            placeholderTextColor={theme.colors.secondaryGray2}
             style={styles.containerInput}
             value={search}
             onChangeText={text => { searchFilter(text) }}

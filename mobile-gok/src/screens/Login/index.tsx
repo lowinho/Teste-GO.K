@@ -19,6 +19,7 @@ import GithubImg from '../../../assets/github.png';
 
 // style
 import { styles } from './styles';
+import { theme } from '../../global/styles/theme';
 
 export function Login(props?: any) {
 
@@ -123,7 +124,10 @@ export function Login(props?: any) {
       { newLogin
       ? null
       : <View style={styles.arrow}>
-          <AntDesign name="arrowleft" size={30} color="black" onPress={handleUsers}/>
+          <AntDesign name="arrowleft" 
+          size={30} 
+          color={theme.colors.primary} 
+          onPress={handleUsers}/>
         </View> }
       
       <View style={styles.imageView} >
@@ -144,13 +148,13 @@ export function Login(props?: any) {
           <View style={styles.userCircle}>
             <FontAwesome name="user-circle" 
               size={24} 
-              color="#E5E5E5" />
+              color={theme.colors.secondaryGray} />
             </View>
             
             <View style={styles.containerInput}>
               <TextInput
                 placeholder="@username"
-                placeholderTextColor='#7E7E7E'
+                placeholderTextColor={theme.colors.secondaryGray2}
                 value={data}
                 onChangeText={setData}
               />

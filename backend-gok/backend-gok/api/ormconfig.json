@@ -1,0 +1,13 @@
+{
+  "type": "sqlite",
+  "host": "localhost",
+  "port": 3306,
+  "username": "gok",
+  "password": "goktest",
+  "database": "gok",
+  "migrations": ["./src/database/migrations/**.ts"],
+  "entities": ["./src/entities/**.ts"],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
+}
