@@ -1,0 +1,181 @@
+{
+  "users": [
+    {
+      "idUser": 60578282,
+      "avatar": "https://avatars.githubusercontent.com/u/60578282?v=4",
+      "name": "César Lowe",
+      "user": "lowinho",
+      "company": "MTCorp ",
+      "location": "São Paulo, Brazil",
+      "star": 5,
+      "id": 3
+    }
+  ],
+  "starred": [
+    {
+      "id": 1
+    },
+    {
+      "idUser": 60578282,
+      "idStar": 32672955,
+      "name": "TypeScript",
+      "description": "TypeScript使用手册（中文版）翻译。TypeScript is a superset of JavaScript that compiles to clean JavaScript output.  http://www.typescriptlang.org",
+      "urlRepo": "https://github.com/zhongsp/TypeScript",
+      "language": "TypeScript",
+      "repositories": 5,
+      "dias": 2,
+      "tag": "TypeScript",
+      "id": 2
+    },
+    {
+      "idUser": 60578282,
+      "idStar": 20929025,
+      "name": "TypeScript",
+      "description": "TypeScript is a superset of JavaScript that compiles to clean JavaScript output.",
+      "urlRepo": "https://github.com/microsoft/TypeScript",
+      "language": "TypeScript",
+      "repositories": 5,
+      "dias": 2,
+      "tag": "TypeScript",
+      "id": 3
+    },
+    {
+      "idUser": 60578282,
+      "idStar": 359465685,
+      "name": "Node-NLW",
+      "description": "Semana NLW de Node",
+      "urlRepo": "https://github.com/lowinho/Node-NLW",
+      "language": "TypeScript",
+      "repositories": 5,
+      "dias": 2,
+      "tag": "TypeScript",
+      "id": 4
+    },
+    {
+      "idUser": 60578282,
+      "idStar": 275190463,
+      "name": "Projeto-Escola",
+      "description": "Projeto criado nas aulas com o professor Luiz Otávio Miranda",
+      "urlRepo": "https://github.com/lowinho/Projeto-Escola",
+      "language": "JavaScript",
+      "repositories": 5,
+      "dias": 2,
+      "tag": "JavaScript",
+      "id": 5
+    },
+    {
+      "idUser": 60578282,
+      "idStar": 290879302,
+      "name": "desafio-mobile-cross-developer",
+      "description": "Desafio para ser aplicado aos futuros candidatos das vagas de desenvolvedor Mobile",
+      "urlRepo": "https://github.com/gok-dev/desafio-mobile-cross-developer",
+      "language": null,
+      "repositories": 5,
+      "dias": 2,
+      "tag": null,
+      "id": 6
+    }
+  ],
+  "suggestion": [
+    {
+      "id": 1,
+      "tag": "JavaScript"
+    },
+    {
+      "id": 2,
+      "tag": "TypeScript"
+    },
+    {
+      "id": 3,
+      "tag": "NodeJS"
+    },
+    {
+      "id": 4,
+      "tag": "React Native"
+    },
+    {
+      "id": 5,
+      "tag": "React"
+    },
+    {
+      "id": 6,
+      "tag": "Angular"
+    },
+    {
+      "id": 7,
+      "tag": "Django"
+    },
+    {
+      "id": 8,
+      "tag": "PHP"
+    },
+    {
+      "id": 9,
+      "tag": "SQL"
+    },
+    {
+      "id": 10,
+      "tag": "MySQL"
+    },
+    {
+      "id": 11,
+      "tag": "Frontend"
+    },
+    {
+      "id": 12,
+      "tag": "Backend"
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "tag": "JavaScript",
+      "idStar": 20929025
+    },
+    {
+      "id": 2,
+      "tag": "TypeScript",
+      "idStar": 20929025
+    },
+    {
+      "tag": "Angular",
+      "idStar": 359465685,
+      "id": 5
+    },
+    {
+      "tag": "PHP",
+      "idStar": 359465685,
+      "id": 6
+    },
+    {
+      "tag": "SQL",
+      "idStar": 275190463,
+      "id": 7
+    },
+    {
+      "tag": "Django",
+      "idStar": 275190463,
+      "id": 8
+    },
+    {
+      "tag": "JavaScript",
+      "idStar": 32672955,
+      "id": 9
+    },
+    {
+      "tag": "Frontend",
+      "idStar": 32672955,
+      "id": 10
+    },
+    {
+      "tag": "C#",
+      "idStar": 338207679,
+      "id": 11
+    },
+    {
+      "tag": "React",
+      "idStar": 32672955,
+      "id": 12
+    }
+  ]
+}

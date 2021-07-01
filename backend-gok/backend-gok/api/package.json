@@ -1,0 +1,36 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/path-type": "^3.0.1",
+    "bcryptjs": "^2.4.3",
+    "dateformat": "^4.5.1",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "express-handler-errors": "^2.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.2",
+    "pbkdf2": "^3.1.2",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.3",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.32",
+    "typeorm-model-generator": "^0.4.5",
+    "yup": "^0.32.9"
+  },
+  "scripts": {
+    "dev": "ts-node-dev src/server.ts",
+    "typeorm": "ts-node-dev node_modules/typeorm/cli.js"
+  },
+  "devDependencies": {
+    "@types/dateformat": "^3.0.1",
+    "@types/express": "^4.17.11",
+    "@types/jsonwebtoken": "^8.5.1",
+    "@types/pbkdf2": "^3.1.0",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.4"
+  }
+}
